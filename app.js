@@ -51,6 +51,10 @@ app.post('/petForm', function(req, res){
     console.log(req.body.newPet);
 });
 
+app.get('/gpaCalculator', function(req, res){
+    res.sendFile('gpaCalculator.html', options);
+});
+
 app.get('/', function(req, res){
     res.sendFile('index.html', options);
 });
