@@ -8,4 +8,3 @@ exports.squareNumber = function(int){
     return (int * int);
 };
 
-
