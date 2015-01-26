@@ -55,6 +55,11 @@ app.get('/gpaCalculator', function(req, res){
     res.sendFile('gpaCalculator.html', options);
 });
 
+app.post('/gpaCalculator', function(req, res){
+    res.send("Your total GPA is: " + tools.gpaTotal(req.body.grade1, req.body.grade2, req.body.grade3, req.body.credit1, req.body.credit2, req.body.credit3));
+    console.log(req.body.newPet);
+});
+
 app.get('/', function(req, res){
     res.sendFile('index.html', options);
 });
