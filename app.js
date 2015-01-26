@@ -47,7 +47,7 @@ app.get('/petForm', function(req, res){
 });
 
 app.post('/petForm', function(req, res){
-    res.send(req.body.newPet + " String Length: " + tools.stringLength(req.body.newPet));
+    res.send(req.body.newPet + " String Length: " + tools.stringLength(req.body.newPet) + " String length squared: " + tools.squareNumber(req.body.newPet.length));
     console.log(req.body.newPet);
 });
 
