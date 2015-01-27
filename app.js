@@ -56,7 +56,7 @@ app.get('/gpaCalculator', function(req, res){
 });
 
 app.post('/gpaCalculator', function(req, res){
-    res.send("Your total GPA is: " + tools.gpaTotal(req.body.grade1, req.body.grade2, req.body.grade3, parseInt(req.body.credit1), parseInt(req.body.credit2), parseInt(req.body.credit3)));
+    res.send("<html> <body> Your total GPA is: " + tools.gpaTotal(req.body.grade1, req.body.grade2, req.body.grade3, parseInt(req.body.credit1), parseInt(req.body.credit2), parseInt(req.body.credit3)) + "</body> </html>");
     console.log(req.body.newPet);
 });
 
