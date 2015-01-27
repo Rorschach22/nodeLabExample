@@ -14,7 +14,7 @@ describe('testing basic functions', function(){
     });
 
     it('should return 3', function(){
-        expect(toNumber(B)).toEqual(3);
+        expect(toNumber('B')).toEqual(3);
     });
 
     it('should return 3', function(){
