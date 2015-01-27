@@ -18,7 +18,7 @@ describe('testing basic functions', function(){
     });
 
     it('should return 3', function(){
-        expect(gpaTotal(B, B, B, 4, 3, 2)).toEqual(3);
+        expect(gpaTotal('B', 'B', 'B', 4, 3, 2)).toEqual(3);
     });
 
 });

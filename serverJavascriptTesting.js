@@ -27,5 +27,10 @@ var toNumber = function(grade){
         return 1;
     } else if(grade=='F'){
         return 0;
-    };
+    }
+};
+
+var gpaTotal = function(grade1, grade2, grade3, credit1, credit2, credit3){
+    gpa = ((toNumber(grade1) * credit1) + (toNumber(grade2) * credit2) + (toNumber(grade3) * credit3)) / (credit1 + credit2 + credit3);
+    return gpa;
 };
